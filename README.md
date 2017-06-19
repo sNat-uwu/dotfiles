@@ -1,2 +1,8 @@
 # dotfiles
-some of my config files just for backup
+Currently included configs for
+-i3
+-polybar
+-vim
+-Xresources(urxvt)
+-ranger
+
