@@ -13,8 +13,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'notpratheek/vim-luna'
 Plugin 'morhetz/gruvbox'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -81,15 +81,24 @@ set mouse=a		" Enable mouse usage (all modes)
 "  source /etc/vim/vimrc.local
 "endif
 
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
 set relativenumber
 "statusbar shown
 set laststatus=2
 "256 colors
 set t_Co=256
-"autostart NERDTree
 
 let g:airline_theme='gruvbox'
 let NERDTreeQuitOnOpen=1
-colorscheme gruvbox 
-
+colorscheme gruvbox
+let g:airline_powerline_fonts=1
+let g:airline_symbols = {}
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'

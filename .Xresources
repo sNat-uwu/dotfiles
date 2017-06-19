@@ -1,6 +1,6 @@
 !urxvt*depth: 32
 urxvt*background: #1b181b
-URxvt*font: xft:Misc Tamsyn:style=Regular:pixelsize=16
+URxvt*font: xft:TamzenForPowerline:style=Regular:pixelsize=16
 URxvt*dynamicColors:true
 URxvt*selectToClipboard:true
 URxvt*scrollBar: false
