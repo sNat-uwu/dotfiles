@@ -14,11 +14,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'notpratheek/vim-luna'
-"plugins here
-
-
-
-"plugins end
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -93,7 +89,7 @@ set laststatus=2
 set t_Co=256
 "autostart NERDTree
 
-let g:airline_theme='luna'
+let g:airline_theme='gruvbox'
 let NERDTreeQuitOnOpen=1
-colorscheme luna-term
+colorscheme gruvbox 
 
