@@ -1,13 +1,13 @@
 !urxvt*depth: 32
 urxvt*background: #1b181b
-URxvt*font: 9x15
+URxvt*font: xft:Misc Tamsyn:style=Regular:pixelsize=16
 URxvt*dynamicColors:true
 URxvt*selectToClipboard:true
 URxvt*scrollBar: false
 URxvt*scrollstyle: rxvt
-tttsttst
+
 ! special
-URxvt*.foreground:   #ab9bab
+URxvt*.foreground:   #cc6699
 !URxvt*.background: #1b181b
 !urxvt*transparent:true
 URxvt*.cursorColor:  #ab9bab

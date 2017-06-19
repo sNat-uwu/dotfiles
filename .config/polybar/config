@@ -10,11 +10,11 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #1b181b
-background-alt = #fae0ff
+background-alt = #d98cb3
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #555
-primary = #fae0ff
+foreground-alt = #d98cb3
+primary = #d98cb3
 secondary = #e60053
 alert = #bd2c40
 
@@ -44,9 +44,9 @@ font-2 = fixed:pixelsize=10;1
 
 modules-left = i3 filesystem memory cpu
 modules-center = date
-modules-right = xbacklight volume battery powermenu
+modules-right = xbacklight volume battery wlan powermenu
 
-tray-position = right
+tray-position = 
 tray-padding = 0
 
 [bar/example]
@@ -120,9 +120,9 @@ label-indicator-underline = ${colors.secondary}
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /home
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %free% free
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -150,7 +150,7 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
-enable-click=false
+enable-click=true
 label-focused-foreground = #1b181b
 
 ; Only show workspaces on the same output as the bar
@@ -197,19 +197,22 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = BL
+format = <label>
+format-prefix = " " 
+label = %percentage%%
+format-prefix-foreground = ${colors.foreground-alt}
+label-foreground = ${root.foreground}
 
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #ff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+;bar-width = 10
+;bar-indicator = |
+;bar-indicator-foreground = #ff
+;bar-indicator-font = 2
+;bar-fill = ─
+;bar-fill-font = 2
+;bar-fill-foreground = #9f78e1
+;bar-empty = ─
+;bar-empty-font = 2
+;bar-empty-foreground = ${colors.foreground-alt}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -234,7 +237,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -274,13 +277,13 @@ format-disconnected =
 type = internal/date
 interval = 5
 date =
-date-alt = "%m/%d/%Y"
+date-alt = "  %m/%d/%y"
 
-time = %H:%M
+time = %l:%M %P
 time-alt =
 
 format-prefix = ""
-format-prefix-foreground = #fae0ff
+format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
 label = %date% %time%
@@ -288,13 +291,16 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+format-volume = <label-volume> 
+format-volume-prefix = " "
+format-volume-prefix-foreground=${colors.foreground-alt}
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+format-muted-prefix-foreground = ${colors.foreground-alt}
+format-muted-foreground = ${root.foreground}
+label-muted = "muted "
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
