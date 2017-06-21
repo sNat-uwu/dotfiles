@@ -51,7 +51,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -88,6 +88,9 @@ set relativenumber
 set laststatus=2
 "256 colors
 set t_Co=256
+"highlight current line
+set cursorline
+set colorcolumn=80
 
 let g:airline_theme='gruvbox'
 let NERDTreeQuitOnOpen=1
