@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sensible'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -93,7 +94,7 @@ set t_Co=256
 set cursorline
 set colorcolumn=80
 
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
 let NERDTreeQuitOnOpen=1
 colorscheme gruvbox
 let g:airline_powerline_fonts=1
@@ -106,3 +107,4 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
+hi Normal guibg=NONE ctermbg=NONE

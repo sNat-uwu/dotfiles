@@ -1,14 +1,31 @@
-!urxvt*depth: 32
-urxvt*background: #282828
-URxvt*font: xft:TamzenForPowerline:style=Regular:pixelsize=16
-URxvt*dynamicColors:true
-URxvt*selectToClipboard: true
-URxvt*scrollBar: false
-URxvt*scrollstyle: rxvt
-
-! special
-URxvt*.foreground:   #ebdbb2
-!URxvt*.background: #1b181b
-!urxvt*transparent:true
-URxvt*.cursorColor:  #ab9bab
-
+st.opacity: 240
+!st.shell: bin/bash
+st.font: TamzenForPowerline:style=Regular:pixelsize=16:antialias=false
+! hard contrast: *background: #1d2021
+st*background: #282828
+! soft contrast: *background: #32302f
+st*foreground: #ebdbb2
+! Black + DarkGrey
+st*color0:  #282828
+st*color8:  #928374
+! DarkRed + Red
+st*color1:  #cc241d
+st*color9:  #fb4934
+! DarkGreen + Green
+st*color2:  #98971a
+st*color10: #b8bb26
+! DarkYellow + Yellow
+st*color3:  #d79921
+st*color11: #fabd2f
+! DarkBlue + Blue
+st*color4:  #458588
+st*color12: #83a598
+! DarkMagenta + Magenta
+st*color5:  #b16286
+st*color13: #d3869b
+! DarkCyan + Cyan
+st*color6:  #689d6a
+st*color14: #8ec07c
+! LightGrey + White
+st*color7:  #a89984
+st*color15: #ebdbb2

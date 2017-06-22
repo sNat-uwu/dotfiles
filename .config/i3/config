@@ -30,7 +30,7 @@ font pango:Misc Tamsyn 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -178,3 +178,4 @@ exec nvidia-settings -l
 exec --no-startup-id compton -Ccb
 exec --no-startup-id udiskie &
 exec setxkbmap -option "caps:escape"
+for_window [class="Steam" instance="Steam"] floating enable

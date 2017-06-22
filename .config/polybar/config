@@ -96,6 +96,19 @@ tray-padding = 2
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
+[module/pavolume]
+type = custom/script
+interval = 0.05 
+label = %output%
+format-prefix = ""
+format-prefix-foreground = ${colors.foreground-alt}
+exec = ~/.config/polybar/pavolume.sh
+click-right = exec pavucontrol
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scroll-up = ~/.config/polybar/pavolume.sh --up
+scroll-down = ~/.config/polybar/pavolume.sh --down
+
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
@@ -184,6 +197,10 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+host = localhost
+port = 6600
+format-offline = <label-offline>
+label-offline = "offline"
 
 icon-prev = 
 icon-stop = 
@@ -192,7 +209,7 @@ icon-pause = 
 icon-next = 
 
 label-song-maxlen = 25
-label-song-ellipsis = true
+label-song-ellipsis = false
 
 [module/xbacklight]
 type = internal/xbacklight
