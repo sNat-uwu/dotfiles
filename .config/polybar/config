@@ -13,7 +13,7 @@ background = #1b181b
 background-alt = #d98cb3
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #d98cb3
+foreground-alt = #689d6a
 primary = #d98cb3
 secondary = #e60053
 alert = #bd2c40
@@ -164,7 +164,7 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 enable-click=true
-label-focused-foreground = #1b181b
+label-focused-foreground = ${colors.background}
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -175,7 +175,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${module/bspwm.label-focused-background}
+label-focused-background = ${colors.foreground-alt}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
@@ -389,7 +389,7 @@ format-spacing = 1
 
 label-open = "    "
 label-open-foreground = ${colors.background}
-label-open-background = ${colors.primary}
+label-open-background = ${colors.foreground-alt}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |

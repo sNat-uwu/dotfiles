@@ -11,16 +11,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
+Plugin 'powerline/powerline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -82,6 +82,7 @@ set mouse=a		" Enable mouse usage (all modes)
 "if filereadable("/etc/vim/vimrc.local")
 "  source /etc/vim/vimrc.local
 "endif
+"
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
@@ -94,17 +95,17 @@ set t_Co=256
 set cursorline
 set colorcolumn=80
 
-"let g:airline_theme='gruvbox'
+"let g:airline_theme='powerlineish'
 let NERDTreeQuitOnOpen=1
 colorscheme gruvbox
-let g:airline_powerline_fonts=1
-let g:airline_symbols = {}
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_powerline_fonts=1
+"let g:airline_symbols = {}
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
 hi Normal guibg=NONE ctermbg=NONE
