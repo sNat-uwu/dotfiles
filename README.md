@@ -3,6 +3,11 @@ Currently included configs for
 - i3
 - polybar
 - vim
-- Xresources(urxvt)
+- Xresources
 - ranger
-
+- mpd
+- ncmpcpp
+- cava
+- rtorrent
+- zsh
+- neofetch
