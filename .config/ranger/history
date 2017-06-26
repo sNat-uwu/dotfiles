@@ -2,4 +2,9 @@ open_with subl
 open_with 
 rename 103-weezer-no_other_one.mp3
 bulkrename
+mkdir fetch
+mv neofetch* ../fetch
+open_with` 
+open_with vim
+
 delete

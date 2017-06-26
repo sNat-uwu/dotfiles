@@ -94,7 +94,8 @@ set t_Co=256
 "highlight current line
 set cursorline
 set colorcolumn=80
-
+"wrapping
+set whichwrap+=<,>,h,l,[,]
 "let g:airline_theme='powerlineish'
 let NERDTreeQuitOnOpen=1
 colorscheme gruvbox

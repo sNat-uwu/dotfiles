@@ -55,7 +55,7 @@ ZSH_POwERLINE_SHOW_OS=false
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux vundle)
+plugins=(git archlinux vundle zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
