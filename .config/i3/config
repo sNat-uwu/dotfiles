@@ -181,5 +181,5 @@ exec nvidia-settings -l
 exec --no-startup-id compton -Ccb
 exec --no-startup-id udiskie &
 exec setxkbmap -option "caps:escape"
-exec --no-startup-id xautolock -time 30 -locker /home/bdix/lock.sh -secure
+#exec --no-startup-id xautolock -detectsleep -time 7 -locker /home/bdix/lock.sh -secure
 for_window [class="Steam" instance="Steam"] floating enable

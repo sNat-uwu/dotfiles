@@ -46,8 +46,8 @@ modules-left = i3 filesystem memory cpu
 modules-center = date
 modules-right = xbacklight volume battery wlan powermenu
 
-tray-position = 
-tray-padding = 0
+tray-position = right 
+tray-padding = 3
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
