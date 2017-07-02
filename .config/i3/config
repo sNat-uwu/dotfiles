@@ -182,4 +182,7 @@ exec --no-startup-id compton -Ccb
 exec --no-startup-id udiskie &
 exec setxkbmap -option "caps:escape"
 #exec --no-startup-id xautolock -detectsleep -time 7 -locker /home/bdix/lock.sh -secure
+exec --no-startup-id nvidia-settings -l
+exec razer-daemon
+exec polychromatic-tray-applet  
 for_window [class="Steam" instance="Steam"] floating enable

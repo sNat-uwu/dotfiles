@@ -19,6 +19,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/myBar]
+monitor = ${env:MONITOR:DVI-I-1}
 width = 100%
 height = 30
 radius = 0
@@ -48,6 +49,38 @@ modules-right = xbacklight volume battery wlan powermenu
 
 tray-position = right 
 tray-padding = 3
+[bar/myBar2]
+monitor = ${env:MONITOR:DVI-D-0}
+width = 100%
+height = 30
+radius = 0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = #fae0ff
+
+padding-left = 0
+padding-right =3 
+
+module-margin-left = 0
+module-margin-right = 2
+
+font-0 = TamzenForPowerline:size=14;3
+font-1 = Wuncon Siji:size=14;3
+font-2 = fixed:pixelsize=10;1
+
+modules-left = i3
+modules-center = 
+modules-right = date 
+
+#tray-position = right 
+#tray-padding = 3
+
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -162,12 +195,12 @@ label-empty-padding = 2
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
+wrapping-scroll =  true
 enable-click=true
 label-focused-foreground = ${colors.background}
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -188,6 +221,7 @@ label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
+label-visible-foreground = ${self.label-focused-foreground}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
