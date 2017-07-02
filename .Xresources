@@ -5,6 +5,7 @@ st.font: TamzenForPowerline:style=Regular:pixelsize=16:antialias=false
 st*background: #282828
 ! soft contrast: *background: #32302f
 st*foreground: #ebdbb2
+st*cursorColor: #ebdbb2
 st*color0:  #282828
 st*color8:  #928374
 ! DarkRed + Red
