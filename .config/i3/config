@@ -176,7 +176,6 @@ bindsym $mod+Ctrl+Up resize shrink height 3px or 3ppt
 bindsym $mod+Ctrl+Right resize grow width 3px or 3ppt
 
 #exec --no-startup-id feh --bg-scale Images/1491571723969.jpg
-exec steam
 exec_always --no-startup-id ./.fehbg
 exec nvidia-settings -l
 exec --no-startup-id compton -Ccb

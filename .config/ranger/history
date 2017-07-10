@@ -6,5 +6,5 @@ mkdir fetch
 mv neofetch* ../fetch
 open_with` 
 open_with vim
-
 delete
+
